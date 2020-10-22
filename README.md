@@ -15,22 +15,22 @@ The server has two directories, "/" and "/pokemon". <br/> "/" only allows GET me
 There are two ways to test the api.py file
 - 1. Run `$ ./api_test.py` or `$ Python3 api_test.py` in command line. 
 - 2. Use Curl.
-For example:
-to test the GET method for http://127.0.0.1:5000/.<br/>
-Run `$ curl http://127.0.0.1:5000/`<br/>
-and you will get a response 
-`This the the home page <h1>HELLO, welcome to the homepage!</h1>`
+      For example:
+      * to test the GET method for http://127.0.0.1:5000/.<br/>
+      Run `$ curl http://127.0.0.1:5000/`<br/>
+      and you will get a response 
+      `This the the home page <h1>HELLO, welcome to the homepage!</h1>`
 
-To test the POST method for http://127.0.0.1:5000/pokemon.<br/>
-Run `$ curl -d "key=key1&value=5" -X POST http://127.0.0.1:5000/pokemon`
-You will get an echo like:
-```
-{
-  "echo": {
-    "key": "key1", 
-    "value": "5"
-  }
-}
-```
+      * To test the POST method for http://127.0.0.1:5000/pokemon.<br/>
+      Run `$ curl -d "key=key1&value=5" -X POST http://127.0.0.1:5000/pokemon`
+      You will get an echo like:
+      ```
+      {
+        "echo": {
+          "key": "key1", 
+          "value": "5"
+        }
+      }
+      ```
 
 
