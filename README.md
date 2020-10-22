@@ -6,7 +6,7 @@ This an API practice project using Flask in Python. This demo is using Python3 (
 `$ pip install -r requirements.txt`
 
 ## Usage
-### 1. start the API server
+### 1. Start the API server
 Run `$ ./api.py` or `$ Python3 api.py` to start the server.
 If it is successfully started, you will get the url: http://127.0.0.1:5000/.
 The server has two directories, "/" and "/pokemon". <br/> "/" only allows GET method while "/pokemon" allows GET, PUT and POST methods.
@@ -16,9 +16,13 @@ There are two ways to test the api.py file
 - 1. Run `$ ./api_test.py` or `$ Python3 api_test.py` in command line. 
 - 2. Use Curl.
 For example:
-to test the POST method for http://127.0.0.1:5000/pokemon.
-Run  
-`$ curl -d "key=key1&value=5" -X POST http://127.0.0.1:5000/pokemon`
+to test the GET method for http://127.0.0.1:5000/.<br/>
+Run `$ curl http://127.0.0.1:5000/`<br/>
+and you will get a response 
+`This the the home page <h1>HELLO, welcome to the homepage!</h1>`
+
+To test the POST method for http://127.0.0.1:5000/pokemon.<br/>
+Run `$ curl -d "key=key1&value=5" -X POST http://127.0.0.1:5000/pokemon`
 You will get an echo like:
 ```
 {
