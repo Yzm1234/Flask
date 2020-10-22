@@ -6,12 +6,13 @@ import requests, json
 app = Flask(__name__)
 api = Api(app)
 
-@app.route('/', methods = ['GET'])
+
+@app.route('/', methods=['GET'])
 def hello():
     return 'This the the home page <h1>HELLO, welcome to the homepage!</h1>'
 
 
-@app.route('/pokemon', methods = ['GET', 'POST', 'PUT'])
+@app.route('/pokemon', methods=['GET', 'POST', 'PUT'])
 def poke():
     if request.method == 'GET':
         data = []
